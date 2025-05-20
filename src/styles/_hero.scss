@@ -1,0 +1,23 @@
+@use 'variables';
+
+.hero{
+    position: relative;
+    display: flex;
+    align-items: end;
+    min-height: 90vh;
+    background: url(../../dist/images/hero.jpg) no-repeat right center;
+    background-size: cover;
+    padding-bottom: 6rem;
+
+    &__content{
+
+
+        &__branding{
+
+            &__logo{
+                width: 320px;
+
+            }
+        }
+    }
+}
