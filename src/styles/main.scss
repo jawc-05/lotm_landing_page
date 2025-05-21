@@ -1,6 +1,7 @@
 @use 'hero';
 @use 'header';
 @use 'variables';
+@use 'img-text-section';
 
 *{
     margin: 0;
@@ -46,6 +47,10 @@ body{
 .text{
     @include text();
 
+    &--victorian{
+        font-family: Victorian;
+    }
+
     &--big{
         @include text(18px);
     }
@@ -58,6 +63,10 @@ body{
         @include text(18px);
         color: variables.$secondaryTextColor;
         text-decoration: underline;
+    }
+
+    &--lighter{
+        color: rgba(variables.$secondaryTextColor, .6);
     }
 }
 

@@ -1,0 +1,26 @@
+.img-text-section{
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 28px;
+    
+    img{
+        max-width: 100%;
+    }
+
+    &__text-container{
+        padding: 0 2vw;
+    
+        &__titles{
+        margin-top: 34px;
+    }
+    h2{
+        margin-bottom: 24px;
+    }
+
+    p{
+        margin-top: 20px;
+    }
+    }
+}
