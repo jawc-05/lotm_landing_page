@@ -1,11 +1,12 @@
 @use 'hero';
+@use 'header';
 @use 'variables';
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Victorian;
+    font-family: Avenir;
 }
 
 body{
@@ -15,6 +16,18 @@ body{
 @font-face{
     font-family: Victorian;
     src: url(../../assets/fonts/VictorianText.ttf);
+}
+
+@font-face{
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
 }
 
 
@@ -58,4 +71,22 @@ body{
     &--small{
         @include title(28px);
     }
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variables.$btnColor;
+    background-color: rgba(variables.$secondaryTextColor,1);
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: 1px solid variables.$btnColor;
 }
