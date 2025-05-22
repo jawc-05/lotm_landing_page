@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){let t=document.querySelector(".hero").clientHeight,n=document.querySelector(".header__links__item:nth-child(1)");window.addEventListener("scroll",function(){var e=window.scrollY;e>t?n.classList.add("visible"):n.classList.remove("visible")})});

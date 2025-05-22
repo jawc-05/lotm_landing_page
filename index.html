@@ -14,10 +14,12 @@
             </h1>
             <ul class="header__links">
                 <li class="header__links__item">
-                    <img src="./dist/images/WeTV.png" class="button" alt="assista aqui">
+                    <a href="#watch" class="button button--trailer">
+                        <img src="dist/images/WeTV.png" alt="assista aqui">
+                    </a>
                 </li>
                 <li class="header__links__item">
-                    <a href="#" class="button">Saiba mais</a>
+                    <a href="#about" class="button">Saiba mais</a>
                 </li>
             </ul>
         </div>
@@ -50,8 +52,7 @@
                 </p>
             </div>
 </section>
-<section class="img-text-section">
-    <img src="./dist/images/imbdb.jpg" alt="Capa de lançamento da obra versão animada(anime,donghua)">
+<section class="img-text-section" id="watch">
     <div class="img-text-section__text-container">
         <h2 class="title--big text--victorian">Informações sobre o Donghua(Anime)</h2>
         <p class="text--big">
@@ -75,8 +76,14 @@
         <p class="text--big">
             Atualmente, foram confirmadas 5 temporadas para a adaptação em donghua de Lord of the Mysteries . A estreia está prevista para o verão de 2025, com o primeiro episódio programado para o dia 7 de julho de 2025 
         </p>
-        <a href="https://www.youtube.com/watch?v=a8p-l75icsA" class="button">Assista o trailer aqui</a>
+        <div class="spacer"></div>
+        <a href="https://www.youtube.com/watch?v=a8p-l75icsA" class="button button--trailer" target="_blank">
+            <span>Assista ao trailer</span>
+            <img src="dist/images/WeTV.png" alt="Logo WeTV">
+        </a>
     </div>
+    <img src="./dist/images/imbdb.jpg" alt="Capa de lançamento da obra versão animada(anime,donghua)">
 </section>
+<script src="dist/js/main.js"></script>
 </body>
 </html>

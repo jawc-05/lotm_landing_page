@@ -12,6 +12,10 @@
 
 body{
     background-color: variables.$bgColor;
+
+    li{
+        list-style: none;
+    }
 }
 
 @font-face{
@@ -89,7 +93,7 @@ body{
     width: 100%;
     height: 60px;
     font-size: 18px;
-    color: variables.$btnColor;
+    color: variables.$bgColor;
     background-color: rgba(variables.$secondaryTextColor,1);
     text-transform: uppercase;
     border-radius: 4px;
@@ -97,5 +101,37 @@ body{
     padding: 8px 14px;
     letter-spacing: 1px;
     text-decoration: none;
+    border: 1px solid variables.$bgColor;
+
+    &:hover{
+        background-color: rgba(variables.$secondaryTextColor, .7);
+        transition: ease .4s;
+    }
+
+    &--trailer {
+    flex-direction: column;
+    height: auto;
+    gap: 8px;
+    text-align: center;
+    padding: 0 0 0 0;
     border: 1px solid variables.$btnColor;
+    margin: 0;
+    background-color: variables.$btnColor;
+
+    &:hover{
+        background-color: rgba(variables.$btnColor, .7);
+        transition: ease .4s;
+    }
+
+
+        img {
+        max-width: 140px;
+        width: 100%;
+        height: auto;
+        }
+
+        span{
+            font-size: 22px;
+        }
+    }
 }
