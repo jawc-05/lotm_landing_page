@@ -10,6 +10,10 @@
     font-family: Avenir;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: variables.$bgColor;
 
